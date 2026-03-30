@@ -31,7 +31,7 @@ Copilot Pro 30-day trial (backup):
 
 ## Recommended Editor
 
-We will teach primarily in Visual Studio Code. Positron is supported. RStudio is supported with more limited Copilot features.
+We will teach primarily in [Visual Studio Code](https://code.visualstudio.com). [Positron](https://positron.posit.co/) is supported. [RStudio](https://posit.co/download/rstudio-desktop/) is supported with more limited Copilot features.
 
 VS Code Copilot setup (official docs):  
 [https://code.visualstudio.com/docs/copilot/setup](https://code.visualstudio.com/docs/copilot/setup)
