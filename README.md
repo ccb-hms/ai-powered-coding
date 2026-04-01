@@ -1,6 +1,6 @@
-# AI-Assisted Coding (CCB Workshop)
+# AI-Powered Vibe Coding (CCB Workshop)
 
-Materials for the CCB workshop **AI-Assisted Coding**.
+Materials for the CCB workshop **AI-Powered Vibe Coding**.
 
 This repository is structured to follow the 2-hour workshop timeline:
 
@@ -16,31 +16,30 @@ This repository is structured to follow the 2-hour workshop timeline:
 - [`solutions/`](solutions/): Completed scripts for the hands-on exercise (Answer Keys).
 - [`data/`](data/): The datasets used in both the live demo and hands-on exercises.
 
-## Prerequisites
+## Prerequisites & Pre-Workshop Setup
+
+Before attending the workshop, please ensure you have:
 
 - Basic familiarity with R and/or Python.
-- Bring your own laptop.
-- GitHub Copilot access (Copilot Pro recommended).
+- Your own laptop.
+- **Active GitHub Copilot access** (Copilot Pro recommended).
+  - 🎓 **Academics:** [Apply for GitHub Education Benefits](https://github.com/settings/education/benefits?locale=en-US) (Free)
+  - ⏱️ **Backup:** [Start a Copilot Pro 30-day trial](https://github.com/github-copilot/pro)
 
-**GitHub Education** (recommended, free for eligible academics):  
-[https://github.com/settings/education/benefits?locale=en-US](https://github.com/settings/education/benefits?locale=en-US)
+### Choosing and Setting Up Your Editor
 
-**Copilot Pro 30-day trial** (backup):  
-[https://github.com/github-copilot/pro](https://github.com/github-copilot/pro)
+We will teach primarily using **Visual Studio Code**, but Positron and RStudio are also supported. 
 
-## Recommended Editor
+Please complete the setup for your preferred IDE **before** the workshop. We have prepared detailed, step-by-step guides for you in the `setup/` folder:
 
-We will teach primarily in [Visual Studio Code](https://code.visualstudio.com). [Positron](https://positron.posit.co/) is supported. [RStudio](https://posit.co/download/rstudio-desktop/) is supported with more limited Copilot features.
-
-VS Code Copilot setup (official docs):  
-[https://code.visualstudio.com/docs/copilot/setup](https://code.visualstudio.com/docs/copilot/setup)
-
-Positron Assistant setup (official docs):  
-[https://positron.posit.co/assistant-getting-started.html](https://positron.posit.co/assistant-getting-started.html)
+- 🔑 **[Start Here: General Setup & Copilot Access](setup/README.md)**
+- 🔵 **[VS Code Setup Guide](setup/vscode.md)** *(Recommended)*
+- 🟣 **[Positron Setup Guide](setup/positron.md)**
+- ⚪ **[RStudio Setup Guide](setup/rstudio.md)** *(Note: RStudio has more limited Copilot features)*
 
 ## Support
 
-Setup questions:  
+If you run into any issues with installation or getting Copilot running, please reach out to us before the workshop!
 
 - [anthony-alexander_christidis@hms.harvard.edu](mailto:anthony-alexander_christidis@hms.harvard.edu)  
 - [alex_pickering@hms.harvard.edu](mailto:alex_pickering@hms.harvard.edu)

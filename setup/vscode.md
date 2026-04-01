@@ -27,4 +27,4 @@ For biomedical data science, we highly recommend using Claude.
 
 1. Open the **Copilot Chat** from the left sidebar.
 2. Look for the model dropdown menu (usually at the top of the chat panel, it might say "GPT-4o" or "Auto" by default).
-3. Click it and select **Claude 3.5 Sonnet**.
+3. Click it and select **Claude 4.6 Sonnet**.
