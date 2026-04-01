@@ -2,6 +2,8 @@
 
 Visual Studio Code (VS Code) provides the most comprehensive and stable integration with GitHub Copilot.
 
+> 📖 **Official Documentation:** If you run into issues, refer to the [Official VS Code Copilot Setup Docs](https://code.visualstudio.com/docs/copilot/setup).
+
 ## 1. Install VS Code
 
 If you don't have it installed, download it here:  

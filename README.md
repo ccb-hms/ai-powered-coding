@@ -1,20 +1,20 @@
 # AI-Powered Vibe Coding (CCB Workshop)
 
-Materials for the CCB workshop **AI-Powered Vibe Coding**.
+Welcome to the materials for the CCB workshop: **AI-Powered Vibe Coding**.
 
-This repository is structured to follow the 2-hour workshop timeline:
+This repository contains everything you need for the session, structured to follow our 2-hour timeline:
 
-- **Hour 1:** Slides and Live Demo
-- **Hour 2:** Hands-on Survival Analysis Exercise
+- 📽️ **Hour 1:** Slides and Live Demo
+- 💻 **Hour 2:** Hands-on Survival Analysis Exercise
 
-## Repository Structure & Quick Links
+## 🗂️ Repository Structure & Quick Links
 
-- [`setup/`](setup/): Pre-workshop installation guides (VS Code, Positron, RStudio).
-- [`slides/`](slides/): PDF of the introductory presentation.
-- [`live-demo/`](live-demo/): The scripts used by the instructors during the live Hour 1 demonstration.
-- [`hands-on/`](hands-on/): The step-by-step prompt guide and starter scripts for the Hour 2 coding exercise.
-- [`solutions/`](solutions/): Completed scripts for the hands-on exercise (Answer Keys).
-- [`data/`](data/): The datasets used in both the live demo and hands-on exercises.
+- [`setup/`](setup/) — Pre-workshop installation guides (VS Code, Positron, RStudio).
+- [`slides/`](slides/) — PDF of the introductory presentation.
+- [`live-demo/`](live-demo/) — Scripts used by the instructors during the live Hour 1 demonstration.
+- [`hands-on/`](hands-on/) — The step-by-step prompt guide and starter scripts for the Hour 2 coding exercise.
+- [`solutions/`](solutions/) — Completed scripts for the hands-on exercise (Answer Keys).
+- [`data/`](data/) — The datasets used in both the live demo and the hands-on exercises.
 
 ## Prerequisites & Pre-Workshop Setup
 
@@ -33,7 +33,7 @@ We will teach primarily using **Visual Studio Code**, but Positron and RStudio a
 Please complete the setup for your preferred IDE **before** the workshop. We have prepared detailed, step-by-step guides for you in the `setup/` folder:
 
 - 🔑 **[Start Here: General Setup & Copilot Access](setup/README.md)**
-- 🔵 **[VS Code Setup Guide](setup/vscode.md)** *(Recommended)*
+- 🔵 **[VS Code Setup Guide](setup/vscode.md)** 
 - 🟣 **[Positron Setup Guide](setup/positron.md)**
 - ⚪ **[RStudio Setup Guide](setup/rstudio.md)** *(Note: RStudio has more limited Copilot features)*
 

@@ -2,6 +2,8 @@
 
 Positron (by Posit) uses a built-in AI engine called **Positron Assistant**. You do *not* install the standard VS Code extensions here.
 
+> 📖 **Official Documentation:** If you run into issues, refer to the [Positron Assistant Getting Started Guide](https://positron.posit.co/assistant-getting-started.html).
+
 ## 1. Install Positron
 
 If you don't have it installed, download it here:  
