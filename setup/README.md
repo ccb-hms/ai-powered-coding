@@ -2,7 +2,7 @@
 
 This folder contains setup instructions for the workshop. We recommend completing setup a few days before the workshop so you have time to resolve GitHub Education verification delays.
 
-## 0) GitHub Copilot Access (Required For The Hands-On)
+## 1. GitHub Copilot Access (Required For The Hands-On)
 
 You will get the best experience with **GitHub Copilot Pro**.
 
@@ -26,23 +26,20 @@ You can cancel before the trial ends to avoid charges.
 
 GitHub also offers a free tier with limited monthly usage. This may be sufficient for light testing, but you may run out of allowance during the hands-on portion.
 
-## 1) Choose Your Editor
+## 2. Choose Your Editor
 
 We will teach primarily in **Visual Studio Code**. Positron is supported. RStudio is supported with more limited Copilot features.
 
 - Visual Studio Code setup:
-
-  `vscode.md`
+  [`vscode.md`](vscode.md)
 
 - Positron setup:
-
-  `positron.md`
+  [`positron.md`](positron.md)
 
 - RStudio setup:
+  [`rstudio.md`](rstudio.md)
 
-  `rstudio.md`
-
-## 2) Quick Test (Verify Copilot Works)
+## 3. Quick Test (Verify Copilot Works)
 
 After completing setup, verify Copilot works by running the quick test.
 
@@ -68,19 +65,19 @@ After completing setup, verify Copilot works by running the quick test.
 
 3. Press Tab to accept.
 
-## 3) Common Troubleshooting
+## 4. Common Troubleshooting
 
 - Confirm you are signed into GitHub inside your editor.
 - Confirm your Copilot plan is active (Education, trial, or paid).
 - Make sure your test file is saved with the correct extension (.R or .py).
 - If Positron Assistant looks enabled but no models appear, sign out of GitHub in Positron and sign back in (this refreshes the Copilot authorization token).
 
-## 4) Support
+## 5. Support
 
 If you have issues, email:
 
-- anthony-alexander_christidis@hms.harvard.edu  
-- alex_pickering@hms.harvard.edu
+- [anthony-alexander_christidis@hms.harvard.edu](mailto:anthony-alexander_christidis@hms.harvard.edu)  
+- [alex_pickering@hms.harvard.edu](mailto:alex_pickering@hms.harvard.edu)
 
 Please include:
 

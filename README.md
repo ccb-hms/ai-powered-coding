@@ -2,31 +2,30 @@
 
 Materials for the CCB workshop **AI-Assisted Coding**.
 
-This repo will contain:
+This repository is structured to follow the 2-hour workshop timeline:
 
-- Slides (Hour 1)
-- Setup instructions (VS Code, Positron, RStudio)
-- A hands-on exercise (Hour 2) in R and Python
-- Starter code and optional solutions
+- **Hour 1:** Slides and Live Demo
+- **Hour 2:** Hands-on Survival Analysis Exercise
 
-## Quick Links
+## Repository Structure & Quick Links
 
-- Setup instructions: [`setup/README.md`](setup/README.md)
-- Hands-on exercise: [`hands-on/README.md`](hands-on/README.md)
-- Slides: [`slides/`](slides/)
-- Starter code: [`starter/`](starter/)
-- Solutions (optional): [`solutions/`](solutions/)
+- [`setup/`](setup/): Pre-workshop installation guides (VS Code, Positron, RStudio).
+- [`slides/`](slides/): PDF of the introductory presentation.
+- [`live-demo/`](live-demo/): The scripts used by the instructors during the live Hour 1 demonstration.
+- [`hands-on/`](hands-on/): The step-by-step prompt guide and starter scripts for the Hour 2 coding exercise.
+- [`solutions/`](solutions/): Completed scripts for the hands-on exercise (Answer Keys).
+- [`data/`](data/): The datasets used in both the live demo and hands-on exercises.
 
 ## Prerequisites
 
-- Basic familiarity with R and/or Python
-- Bring your own laptop
-- GitHub Copilot access (Copilot Pro recommended)
+- Basic familiarity with R and/or Python.
+- Bring your own laptop.
+- GitHub Copilot access (Copilot Pro recommended).
 
-GitHub Education (recommended, free for eligible academics):  
+**GitHub Education** (recommended, free for eligible academics):  
 [https://github.com/settings/education/benefits?locale=en-US](https://github.com/settings/education/benefits?locale=en-US)
 
-Copilot Pro 30-day trial (backup):  
+**Copilot Pro 30-day trial** (backup):  
 [https://github.com/github-copilot/pro](https://github.com/github-copilot/pro)
 
 ## Recommended Editor
