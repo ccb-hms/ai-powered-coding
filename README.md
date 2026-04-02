@@ -2,21 +2,22 @@
 
 Welcome to the materials for the CCB workshop: **AI-Powered Vibe Coding**.
 
-This repository contains everything you need for the session, structured to follow our 2-hour timeline:
+This repository contains everything you need for the session, structured to follow our 2-hour schedule:
 
-- 📽️ **Hour 1:** Slides and Live Demo
-- 💻 **Hour 2:** Hands-on Survival Analysis Exercise
+- 📽️ **Part 1 (~25 min):** Concepts & Slides
+- 🪄 **Part 2 (~45 min):** Live Coding Demonstration
+- ☕ **Break (~5 min)**
+- 💻 **Part 3 (~45 min):** Hands-On Survival Analysis Exercise
 
 ## 🗂️ Repository Structure & Quick Links
 
 - [`setup/`](setup/) — Pre-workshop installation guides (VS Code, Positron, RStudio).
 - [`slides/`](slides/) — PDF of the introductory presentation.
-- [`live-demo/`](live-demo/) — Scripts used by the instructors during the live Hour 1 demonstration.
-- [`hands-on/`](hands-on/) — The step-by-step prompt guide and starter scripts for the Hour 2 coding exercise.
-- [`solutions/`](solutions/) — Completed scripts for the hands-on exercise (Answer Keys).
+- [`live-demo/`](live-demo/) — Scripts used by the instructors during the live demonstration.
+- [`hands-on/`](hands-on/) — The step-by-step prompt guide, starter scripts, and **solutions** for the interactive coding exercise.
 - [`data/`](data/) — The datasets used in both the live demo and the hands-on exercises.
 
-## Prerequisites & Pre-Workshop Setup
+## 🛠️ Prerequisites & Pre-Workshop Setup
 
 Before attending the workshop, please ensure you have:
 
