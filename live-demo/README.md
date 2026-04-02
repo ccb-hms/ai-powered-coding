@@ -6,7 +6,7 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 
 - Open this folder in VS Code.
 - Ensure you have run `generate_data.R` to create the `biomarker_dummy.csv` file.
-- Open `live_demo.R`. Keep `utils.R` closed.
+- Open `live_demo.R`. Keep `utils.R` closed to test Copilot's search features.
 
 ---
 
@@ -40,16 +40,17 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 ### Demo 5: Slash Command `/fix` (Debugging)
 
 1. Go to Section 4. Send the chunk to the terminal to run it.
-2. It will throw an error: `Error in select(...) : object 'patient_id' not found` (because the code is missing a `%>%` pipe).
+2. It will throw an error: `Error in select(...) : object 'patient_id' not found` (because the code is missing a `|>` pipe).
 3. Highlight the broken code, press `Ctrl+I`, type `/fix`, and press Enter.
 4. Copilot will diagnose the missing pipe. Accept the fix.
 
-### Demo 6: Context Awareness (`@workspace`)
+### Demo 6: Context Awareness (Auto-Search & `#` Pinning)
 
-*Copilot can search your entire project, not just open files.*
+*Copilot can search your entire project, but you can also explicitly force it to read files.*
+
 1. Open the Sidebar Chat.
-2. Type: `@workspace I need to calculate log2 fold change. Is there a function for that in my project, and does it handle NAs?`
-3. Copilot will find the `utils.R` file (even though it is closed) and summarize the logic perfectly.
+2. **Test Auto-Search:** Type: `I need to calculate log2 fold change. Is there a function for that in my project?` (Copilot should automatically search and find `utils.R`).
+3. **Test Explicit Pinning:** Type `#ut` and press Tab to attach `#utils.R`. Then type: `How does the calculate_log2_fc function in this file handle NAs?` (This proves you can manually attach closed files).
 
 ### Demo 7: Language Translation (R to Python)
 
@@ -61,6 +62,7 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 ### Demo 8: AI-Generated Git Commits
 
 *Copilot can write your commit messages by reading your file diffs.*
+
 1. Save the changes you just made to `live_demo.R`.
 2. Open the **Source Control** tab on the left sidebar of VS Code.
 3. Click the **Sparkle Icon** (✨) located inside the Commit Message text box.
@@ -69,6 +71,7 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 ### Demo 9: The Positron Superpower (Session Memory)
 
 *Note: This demo requires the Positron IDE.*
+
 1. Open Positron and load the CSV into your R environment: `env_data <- read.csv("biomarker_dummy.csv")`.
 2. Open the Positron Assistant Chat.
 3. Type: `Look at env_data in my environment. What are the column names, and write code to calculate the mean biomarker_score for each treatment_group.`
