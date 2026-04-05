@@ -20,10 +20,10 @@
 # (DEMO 2: Use Inline Chat (Ctrl+I) to convert this to ggplot2)
 
 df <- read.csv("data/biomarker_dummy.csv")
-plot(df$age, df$biomarker_score,
-     col = as.factor(df$treatment_group),
+plot(df$age, df$biomarker_score, 
+     col = as.factor(df$treatment_group), 
      main = "Age vs Biomarker",
-     xlab = "Age", ylab = "Score", pch = 19)
+     xlab = "Age", ylab = "Score", pch=19)
 
 
 # ____________________________________
@@ -33,10 +33,9 @@ plot(df$age, df$biomarker_score,
 # (DEMO 3: Highlight the regex string and use /explain)
 # (DEMO 4: Highlight the whole function below and use /doc)
 
-extract_patient_cohort <- function(file_name) {
-  matches <- regmatches(file_name,
-    regexpr("(?<=_)[A-Z]{2,3}(?=[0-9]{4})", file_name, perl = TRUE)
-  )
+extractPatientCohort <- function(file_name) {
+  matches <- regmatches(file_name, 
+    regexpr("(?<=_)[A-Z]{2,3}(?=[0-9]{4})", file_name, perl=TRUE))
   return(matches)
 }
 
@@ -50,6 +49,6 @@ extract_patient_cohort <- function(file_name) {
 
 library(dplyr)
 
-clean_data <- read.csv("data/biomarker_dummy.csv") |>
-  filter(age > 18)
+clean_data <- read.csv("data/biomarker_dummy.csv") %>%
+  filter(age > 18) 
   select(patient_id, treatment_group, biomarker_score, response_status)
