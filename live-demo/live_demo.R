@@ -19,7 +19,7 @@
 
 # (DEMO 2: Use Inline Chat (Ctrl+I) to convert this to ggplot2)
 
-df <- read.csv("biomarker_dummy.csv")
+df <- read.csv("data/biomarker_dummy.csv")
 plot(df$age, df$biomarker_score, 
      col = as.factor(df$treatment_group), 
      main = "Age vs Biomarker",
@@ -49,7 +49,7 @@ extractPatientCohort <- function(file_name) {
 
 library(dplyr)
 
-clean_data <- read.csv("biomarker_dummy.csv") %>%
+clean_data <- read.csv("data/biomarker_dummy.csv") %>%
   filter(age > 18) 
   select(patient_id, treatment_group, biomarker_score, response_status)
 
@@ -64,7 +64,7 @@ clean_data <- read.csv("biomarker_dummy.csv") %>%
 source("utils.R")
 library(ggplot2)
 
-biomarker_df <- read.csv("biomarker_dummy.csv")
+biomarker_df <- read.csv("data/biomarker_dummy.csv")
 
 # Compute log2 FC vs. Control for each treatment group
 control_vals <- biomarker_df$biomarker_score[biomarker_df$treatment_group == "Control"]
