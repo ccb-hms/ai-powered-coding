@@ -14,7 +14,7 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 
 1. Go to Section 1 in `live_demo.R`.
 2. Type the following comment and press `Enter`:
-   `# Load readr, read biomarker_dummy.csv, and display the first 5 rows`
+   `# load biomarker csv and show the first few rows`
 3. Wait 1-3 seconds for the gray "Ghost Text" to appear.
 4. Press `Tab` to accept the suggestion.
 
@@ -22,7 +22,7 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 
 1. Go to Section 2. Highlight the entire base R `plot()` code.
 2. Press `Ctrl+I` (Windows/Linux) or `Cmd+I` (Mac) to open the Inline Chat.
-3. Type: `Convert this to ggplot2. Map x to biomarker_score, y to response_status, and color points by treatment_group.`
+3. Type: `Convert this to ggplot2 and plot response vs score, colored by group.`
 4. Press Enter, review the red/green Diff, and click **Accept**.
 
 ### Demo 3: Slash Command `/explain` (Legacy Code)
@@ -33,7 +33,7 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 
 ### Demo 4: Slash Command `/doc` (Documentation)
 
-1. Still in Section 3, highlight the entire `extractPatientCohort` function.
+1. Still in Section 3, highlight the entire `extract_patient_cohort` function.
 2. Press `Ctrl+I`, type `/doc`, and press Enter. 
 3. Copilot will automatically generate Roxygen2 formatted documentation. Accept the diff.
 
@@ -44,13 +44,12 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 3. Highlight the broken code, press `Ctrl+I`, type `/fix`, and press Enter.
 4. Copilot will diagnose the missing pipe. Accept the fix.
 
-### Demo 6: Context Awareness (Auto-Search & `#` Pinning)
+### Demo 6: Context Awareness (Auto-Search)
 
 *Copilot can search your entire project, but you can also explicitly force it to read files.*
 
 1. Open the Sidebar Chat.
 2. **Test Auto-Search:** Type: `I need to calculate log2 fold change. Is there a function for that in my project?` (Copilot should automatically search and find `utils.R`).
-3. **Test Explicit Pinning:** Type `#ut` and press Tab to attach `#utils.R`. Then type: `How does the calculate_log2_fc function in this file handle NAs?` (This proves you can manually attach closed files).
 
 ### Demo 7: Language Translation (R to Python)
 
@@ -67,12 +66,3 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 2. Open the **Source Control** tab on the left sidebar of VS Code.
 3. Click the **Sparkle Icon** (✨) located inside the Commit Message text box.
 4. Copilot will analyze what you changed and auto-generate a professional commit message.
-
-### Demo 9: The Positron Superpower (Session Memory)
-
-*Note: This demo requires the Positron IDE.*
-
-1. Open Positron and load the CSV into your R environment: `env_data <- read.csv("biomarker_dummy.csv")`.
-2. Open the Positron Assistant Chat.
-3. Type: `Look at env_data in my environment. What are the column names, and write code to calculate the mean biomarker_score for each treatment_group.`
-4. Notice how Positron Assistant reads your *live session memory*, whereas VS Code only reads text files.
