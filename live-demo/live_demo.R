@@ -18,11 +18,11 @@
 # _______________________________________
 
 # (DEMO 2: Use Inline Chat (Ctrl+I) to convert this to ggplot2)
-# (DEMO 3: Use the code below to test Auto-Search vs explicit ggplot2,
+# (DEMO 3: Ctrl+I, send selection to chat, ..., restore checkpoint)
 
 df <- read.csv("data/biomarker_dummy.csv")
-plot(df$age, df$biomarker_score, 
-     col = as.factor(df$treatment_group), 
+plot(df$age, df$biomarker_score,
+     col = as.factor(df$treatment_group),
      main = "Age vs Biomarker",
      xlab = "Age", ylab = "Score", pch=19)
 
@@ -31,8 +31,8 @@ plot(df$age, df$biomarker_score,
 # Section 3: Legacy Code Explanation
 # ____________________________________
 
-# (DEMO 3: Highlight the regex string and use /explain)
-# (DEMO 4: Highlight the whole function below and use /doc)
+# (DEMO 4: Highlight the regex string and use /explain)
+# (DEMO 5: Highlight the whole function below and use /doc)
 
 extractPatientCohort <- function(file_name) {
   matches <- regmatches(file_name, 
@@ -45,7 +45,7 @@ extractPatientCohort <- function(file_name) {
 # Section 4: Data Cleaning (Debugging)
 # _____________________________________
 
-# (DEMO 5: Run this to see the error, then use /fix on the broken pipe)
+# (DEMO 6: Run this to see the error, then use /fix on the broken pipe)
 
 library(dplyr)
 
@@ -58,8 +58,8 @@ clean_data <- read.csv("data/biomarker_dummy.csv") %>%
 # Section 5: Biomarker Summary + Boxplot
 # _______________________________________
 
-# (DEMO 6: use chat to find function in workspace)
-# (DEMO 7: Highlight the whole function below and use /doc)
-# (DEMOS 6, 8, & 9: Use the code below to test Auto-Search vs explicit #utils.R, 
-# auto-generate Git Commits
+# (DEMO 7: use chat to find function in workspace)
+# (DEMO 8: use chat to calculate log2 fold change between treatment groups and control group)
+# (DEMO 9: auto-generate git commits)
+# (DEMO 10: custom linting agent to fix style issues)
 
