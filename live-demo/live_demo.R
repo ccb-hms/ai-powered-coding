@@ -31,8 +31,8 @@ plot(df$age, df$biomarker_score,
 # Section 3: Legacy Code Explanation
 # ____________________________________
 
-# (DEMO 4: Highlight the regex string and use /explain)
-# (DEMO 5: Highlight the whole function below and use /doc)
+# (DEMO 4: Highlight the regex string and type "/explain")
+# (DEMO 5: Highlight the whole function below and type "add docstring")
 
 extractPatientCohort <- function(file_name) {
   matches <- regmatches(file_name, 

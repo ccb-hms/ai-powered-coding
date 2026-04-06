@@ -40,10 +40,10 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 2. Press `Ctrl+I` and type `/explain`.
 3. Copilot will open the sidebar and provide a plain-English translation of the regex.
 
-### Demo 5: Slash Command `/doc` (Documentation)
+### Demo 5: Add Documentation
 
 1. Still in Section 3, highlight the entire `extractPatientCohort` function.
-2. Press `Ctrl+I`, type `/doc`, and press Enter. 
+2. Press `Ctrl+I`, type `add docstring`, and press Enter. 
 3. Copilot will automatically generate Roxygen2 formatted documentation. Accept the diff.
 
 ### Demo 6: Slash Command `/fix` (Debugging)
