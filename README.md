@@ -2,6 +2,8 @@
 
 Welcome to the materials for the CCB workshop: **AI-Powered Vibe Coding**.
 
+> 🌐 **View the official workshop website here:** [https://ccb.connect.hms.harvard.edu/AI-Powered-Coding/](https://ccb.connect.hms.harvard.edu/AI-Powered-Coding/)
+
 This repository contains everything you need for the session, structured to follow our 2-hour schedule:
 
 - 📽️ **Part 1 (~30 min):** Concepts & Slides
