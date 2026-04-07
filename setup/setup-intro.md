@@ -8,7 +8,7 @@ You will get the best experience with **GitHub Copilot Pro**.
 
 ### Option A (Recommended): GitHub Education (Free for Academics & Students)
 
-GitHub offers free Copilot access to both students and academic faculty/staff. To ensure your application is approved without delays, please follow these steps carefully:
+GitHub offers free Copilot Pro access to both students and academic faculty/staff. To ensure your application is approved without delays, please follow these steps carefully:
 
 1. **Prepare your GitHub Account:**
    - Ensure your institutional `.edu` email address is added to your GitHub account (you can have multiple emails linked to one GitHub account).
