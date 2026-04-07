@@ -6,15 +6,24 @@ This folder contains setup instructions for the workshop. We recommend completin
 
 You will get the best experience with **GitHub Copilot Pro**.
 
-### Option A (Recommended): GitHub Education (Free Copilot Pro For Eligible Academics)
+### Option A (Recommended): GitHub Education (Free for Academics & Students)
 
-1. Apply here:
+GitHub offers free Copilot access to both students and academic faculty/staff. To ensure your application is approved without delays, please follow these steps carefully:
 
-   [https://github.com/settings/education/benefits?locale=en-US](https://github.com/settings/education/benefits?locale=en-US)
+1. **Prepare your GitHub Account:**
+   - Ensure your institutional `.edu` email address is added to your GitHub account (you can have multiple emails linked to one GitHub account).
+   - Ensure the **Name** on your GitHub profile *exactly matches* the name on your Harvard (or institutional) ID card. *(Note: You can change your GitHub display name back to whatever you want immediately after your application is approved!)*
 
-2. Approval can be fast, but Copilot benefits may take about **72 hours** to activate (and longer if you need to resubmit verification).
+2. **Apply for Benefits:**
+   - Go to the application portal: [https://github.com/settings/education/benefits?locale=en-US](https://github.com/settings/education/benefits?locale=en-US)
+   - Follow the prompts to upload a photo of your institutional ID card.
 
-3. After activation, return to the same page and redeem Copilot using the Copilot redemption link shown there.
+3. **Wait for Activation:**
+   - Profile approval is often quick, but the actual Copilot benefits can take about **72 hours** to activate on your account (and longer if they ask you to resubmit verification). 
+
+4. **Redeem:**
+   - After you receive confirmation, return to the [Education Benefits page](https://github.com/settings/education/benefits?locale=en-US) and explicitly redeem Copilot using the redemption link shown there.
+
 
 ### Option B (Backup): 30-Day Copilot Pro Trial
 

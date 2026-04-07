@@ -23,21 +23,13 @@ Before attending the workshop, please ensure you have:
 - Basic familiarity with R and/or Python.
 - Your own laptop.
 - **Active GitHub Copilot access** (Copilot Pro recommended).
-  - 🎓 **Academics:** [Apply for GitHub Education Benefits](https://github.com/settings/education/benefits?locale=en-US) (Free)
+  - 🔑 **[Start Here: General Setup & Copilot Access](setup/setup-intro.md)**
+  - 🎓 **Academics & Students:** [Apply for GitHub Education Benefits](https://github.com/settings/education/benefits?locale=en-US) (Free)
   - ⏱️ **Backup:** [Start a Copilot Pro 30-day trial](https://github.com/github-copilot/pro)
 
 ### Choosing and Setting Up Your Editor
 
-Please complete the setup for your preferred IDE **before** the workshop. We have prepared detailed, step-by-step guides for you.
-
-**Step 1: Get Copilot Access**  
-
-First, ensure you have an active Copilot subscription and understand the basics of the tool:
-
-- 🔑 **[Start Here: General Setup & Copilot Access](setup/setup-intro.md)**
-
-**Step 2: Configure Your IDE**  
-Once your access is activated, choose your preferred environment. We will teach primarily using **Visual Studio Code**, but Positron and RStudio are also supported:
+Once your Copilot access is activated, please complete the setup for your preferred IDE **before** the workshop. We will teach primarily using **Visual Studio Code**, but Positron and RStudio are also supported:
 
 - 🔵 **[VS Code Setup Guide](setup/vscode.md)** *(Recommended)*
 - 🟣 **[Positron Setup Guide](setup/positron.md)** *(Supported)*
