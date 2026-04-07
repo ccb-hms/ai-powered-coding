@@ -8,20 +8,26 @@ website:
   
   sidebar:
     style: "floating"
+    search: true
     contents:
       - text: "Home"
         file: index.qmd
+        
       - section: "Pre-Workshop Setup"
+        href: setup/README.md
         contents:
-          - setup/README.md
           - setup/vscode.md
           - setup/positron.md
           - setup/rstudio.md
-      - section: "Live Demo Guide"
-        contents:
-          - live-demo/README.md
+          
+      - text: "Live Demo Guide"
+        file: live-demo/README.md
 
 format:
   html:
-    theme: cosmo
+    theme: 
+      light: litera
+      dark: darkly
     toc: true
+    toc-title: "On this page"
+    smooth-scroll: true
