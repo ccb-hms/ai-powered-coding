@@ -13,20 +13,26 @@ website:
       - text: "Home"
         file: index.qmd
         
-      - section: "Pre-Workshop Setup"
-        href: setup/README.md
+      - section: "Setup"
         contents:
-          - setup/vscode.md
-          - setup/positron.md
-          - setup/rstudio.md
-          
-      - text: "Live Demo Guide"
-        file: live-demo/README.md
+          - text: "Pre-Workshop Setup"
+            file: setup/README.md
+          - text: "VS Code"
+            file: setup/vscode.md
+          - text: "Positron"
+            file: setup/positron.md
+          - text: "RStudio"
+            file: setup/rstudio.md
+            
+      - section: "Live Demo"
+        contents:
+          - text: "Live Demo Guide"
+            file: live-demo/README.md
 
 format:
   html:
     theme: 
-      light: litera
+      light: cosmo
       dark: darkly
     toc: true
     toc-title: "On this page"
