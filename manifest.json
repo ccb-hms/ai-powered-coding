@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "locale": "en_US",
+  "platform": "4.5.2",
+  "metadata": {
+    "appmode": "quarto-static",
+    "primary_rmd": "index.qmd",
+    "primary_html": null,
+    "content_category": null,
+    "has_parameters": false
+  },
+  "quarto": {
+    "version": "1.8.27",
+    "engines": ["markdown"]
+  },
+  "packages": null,
+  "files": {
+    ".github/copilot-instructions.md": {
+      "checksum": "4353282876374a03608a2ee8e061ab14"
+    },
+    "_quarto.yml": {
+      "checksum": "433b99d7598d80caafc8bb082662c9bc"
+    },
+    "data/biomarker_dummy.csv": {
+      "checksum": "8086b4783aa5da9e3fd30347fa104f17"
+    },
+    "index.qmd": {
+      "checksum": "95daf95af519eb1aa8619d24975d3b35"
+    },
+    "live-demo/generate_data.R": {
+      "checksum": "6c4cf5636d384788bfe76dead900400e"
+    },
+    "live-demo/live_demo.R": {
+      "checksum": "befe55e68c36b6fe7210212430ada345"
+    },
+    "live-demo/README.md": {
+      "checksum": "776f1f23cf2e03a0a5f48f5ca6910c0e"
+    },
+    "live-demo/utils.R": {
+      "checksum": "2968dd9f02522a6d6aeb97ded05d1931"
+    },
+    "README.md": {
+      "checksum": "744dac9d0977ade13c457d55e8f43328"
+    },
+    "setup/positron.md": {
+      "checksum": "638078a6f67cb63d6675b9bdb77d8502"
+    },
+    "setup/README.md": {
+      "checksum": "474f9ca206185bcd53b56e08f01e3bc9"
+    },
+    "setup/rstudio.md": {
+      "checksum": "73fe99e7c0ccf739c4039bccdd35ba63"
+    },
+    "setup/vscode.md": {
+      "checksum": "f99f295f963a77ad728fc7a30c6a13da"
+    },
+    "slides/AI-Powered-Coding.pdf": {
+      "checksum": "d86f950693b386ce7d285e6a01ba73de"
+    }
+  },
+  "users": null
+}
