@@ -49,7 +49,7 @@ To participate in the Hands-On exercises and practice AI-generated Git commits, 
    git clone https://github.com/ccb-hms/ai-powered-coding.git
    ```
 
-2. Open the newly cloned `ai-powered-coding` folder in your IDE.
+2. Open the newly cloned `ai-powered-coding/` folder in your IDE.
 
 ## Support
 

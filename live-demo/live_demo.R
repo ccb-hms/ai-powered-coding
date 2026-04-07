@@ -58,8 +58,8 @@ clean_data <- read.csv("biomarker_dummy.csv") %>%
 # Section 5: Biomarker Summary + Boxplot
 # _______________________________________
 
-# (DEMOS 6, 8, & 9: Use the code below to test Auto-Search vs explicit #utils.R, 
-# auto-generate Git Commits, and test Positron's live session memory)
+# (DEMOS 6, 8, 9, & 10: Use the code below to test Auto-Search vs explicit #utils.R, 
+# test the @terminal command, auto-generate Git Commits, and test Positron's memory)
 
 source("utils.R")
 library(ggplot2)
