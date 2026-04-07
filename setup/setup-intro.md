@@ -27,7 +27,7 @@ GitHub offers free Copilot access to both students and academic faculty/staff. T
 
 ### Option B (Backup): 30-Day Copilot Pro Trial
 
-https://github.com/github-copilot/pro
+[https://github.com/github-copilot/pro](https://github.com/github-copilot/pro)
 
 You can cancel before the trial ends to avoid charges.
 
@@ -40,13 +40,13 @@ GitHub also offers a free tier with limited monthly usage. This may be sufficien
 We will teach primarily in **Visual Studio Code**. Positron is supported. RStudio is supported with more limited Copilot features.
 
 - Visual Studio Code setup:
-  [`vscode.md`](vscode.md)
+  [`VS Code`](vscode.md)
 
 - Positron setup:
-  [`positron.md`](positron.md)
+  [`Positron`](positron.md)
 
 - RStudio setup:
-  [`rstudio.md`](rstudio.md)
+  [`RStudio`](rstudio.md)
 
 ## 3. Quick Test (Verify Copilot Works)
 
