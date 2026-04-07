@@ -13,7 +13,7 @@ This repository contains everything you need for the session, structured to foll
 - [`setup/`](setup/) — Pre-workshop installation guides (VS Code, Positron, RStudio).
 - [`slides/`](slides/) — PDF of the introductory presentation.
 - [`live-demo/`](live-demo/) — The live demo guide and instructor scripts.
-- [`hands-on/`](hands-on/) — The step-by-step prompt guide, starter scripts, and **solutions** for the interactive coding exercise.
+- [`hands-on/`](hands-on/) — The step-by-step prompt guide, starter scripts, and solutions scripts.
 - [`data/`](data/) — The datasets used in both the live demo and the hands-on exercises.
 
 ## 🛠️ Prerequisites & Pre-Workshop Setup
