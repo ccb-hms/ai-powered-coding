@@ -39,6 +39,18 @@ Once your Copilot access is activated, please complete the setup for your prefer
 - 🟣 **[Positron Setup Guide](setup/positron.md)** *(Supported)*
 - ⚪ **[RStudio Setup Guide](setup/rstudio.md)** *(Note: RStudio has more limited Copilot features)*
 
+### Get the Workshop Materials
+
+To participate in the Hands-On exercises and practice AI-generated Git commits, you need your own local copy of this repository. 
+
+1. Open your terminal and run:
+
+   ```bash
+   git clone https://github.com/ccb-hms/ai-powered-coding.git
+   ```
+
+2. Open the newly cloned `ai-powered-coding` folder in your IDE.
+
 ## Support
 
 If you run into any issues with installation or getting Copilot running, please reach out to us before the workshop!

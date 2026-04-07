@@ -59,7 +59,15 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 3. Type: `Translate this exact logic to Python using pandas.`
 4. Copilot will rewrite the logic in Python syntax.
 
-### Demo 8: AI-Generated Git Commits
+### Demo 8: Terminal Assistance (`@terminal`)
+
+*Copilot can help you navigate the command line and Git directly from the chat.*
+
+1. Open the Sidebar Chat.
+2. Type: `@terminal How do I undo my last git commit?`
+3. Hover over the generated code block and click the **Run in Terminal** icon to insert it directly into your console.
+
+### Demo 9: AI-Generated Git Commits
 
 *Copilot can write your commit messages by reading your file diffs.*
 
@@ -68,7 +76,7 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 3. Click the **Sparkle Icon** (✨) located inside the Commit Message text box.
 4. Copilot will analyze what you changed and auto-generate a professional commit message.
 
-### Demo 9: The Positron Superpower (Session Memory)
+### Demo 10: The Positron Superpower (Session Memory)
 
 *Note: This demo requires the Positron IDE.*
 
