@@ -1,4 +1,4 @@
-# Setup (AI-Powered Vibe Coding with GitHub Copilot)
+# Workshop Setup
 
 This folder contains setup instructions for the workshop. We recommend completing setup a few days before the workshop so you have time to resolve GitHub Education verification delays.
 
