@@ -1,12 +1,11 @@
 # RStudio Setup for GitHub Copilot
 
-*Note: RStudio currently only supports Copilot "Ghost Text" (autocomplete). It does not support the advanced Chat, Agent, or Inline editing features available in VS Code and Positron.*
+*Note: As of April 14, 2026, the **stable release** of RStudio only supports Copilot "Ghost Text" (autocomplete). However, if you are using an **RStudio Daily Build**, you now have access to the full Posit AI Assistant (which includes Chat and Inline editing).*
 
 ## 1. Update RStudio
 
-You must be using RStudio version 2023.09.0 or newer.  
-
-Download the latest version here: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+- **For Stable Release (Autocomplete only):** You must be using RStudio version 2023.09.0 or newer. Download it here: [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+- **For Daily Builds (Full AI Assistant):** Download the latest bleeding-edge daily build here: [https://dailies.rstudio.com/](https://dailies.rstudio.com/)
 
 ## 2. Enable Copilot
 
@@ -23,4 +22,4 @@ Download the latest version here: [https://posit.co/download/rstudio-desktop/](h
 3. Paste the code into the GitHub website and click **Authorize**.
 4. Return to RStudio and click **Apply** / **OK**.
 
-You are now ready to use Ghost Text! Just type a comment in an R script and wait a few seconds for the suggestion to appear.
+You are now ready to code! If you are on the stable release, just type a comment in an R script and wait a few seconds for the Ghost Text suggestion to appear. If you are on a daily build, look for the new Posit Assistant chat panel!
