@@ -4,6 +4,7 @@ project:
 website:
   title: "AI-Powered Vibe Coding"
   repo-url: "https://github.com/ccb-hms/ai-powered-coding"
+  repo-branch: master  # <--- ADD THIS LINE!
   repo-actions: [source]
   
   sidebar:
