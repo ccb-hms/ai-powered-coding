@@ -10,11 +10,13 @@ This repository contains everything you need for the session, structured to foll
 
 ## 🗂️ Repository Structure & Quick Links
 
-- [`setup/`](setup/) — Pre-workshop installation guides (VS Code, Positron, RStudio).
-- [`slides/`](slides/) — PDF of the introductory presentation.
-- [`live-demo/`](live-demo/) — The live demo guide and instructor scripts.
-- [`hands-on/`](hands-on/) — The step-by-step prompt guide, starter scripts, and solutions scripts.
-- [`data/`](data/) — The datasets used in both the live demo and the hands-on exercises.
+*Click the links below to access the raw files and code on GitHub:*
+
+- [`setup/`](https://github.com/ccb-hms/ai-powered-coding/tree/master/setup) — Pre-workshop installation guides (VS Code, Positron, RStudio).
+- [`slides/`](https://github.com/ccb-hms/ai-powered-coding/tree/master/slides) — PDF of the introductory presentation.
+- [`live-demo/`](https://github.com/ccb-hms/ai-powered-coding/tree/master/live-demo) — The live demo guide and instructor scripts.
+- [`hands-on/`](https://github.com/ccb-hms/ai-powered-coding/tree/master/hands-on) — The step-by-step prompt guide, starter scripts, and solutions scripts.
+- [`data/`](https://github.com/ccb-hms/ai-powered-coding/tree/master/data) — The datasets used in both the live demo and the hands-on exercises.
 
 ## 🛠️ Prerequisites & Pre-Workshop Setup
 
