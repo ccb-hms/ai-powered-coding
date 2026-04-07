@@ -26,27 +26,11 @@ plot(df$age, df$biomarker_score,
      main = "Age vs Biomarker",
      xlab = "Age", ylab = "Score", pch=19)
 
-
-# ____________________________________
-# Section 3: Legacy Code Explanation
-# ____________________________________
-
-# (DEMO 4: Highlight the regex string and type "/explain")
-# (DEMO 5: Highlight the whole function below and type "add docstring")
-
-extractPatientCohort <- function(file_name) {
-  matches <- regmatches(file_name, 
-    regexpr("(?<=_)[A-Z]{2,3}(?=[0-9]{4})", file_name, perl=TRUE))
-  return(matches)
-}
-
-
 # _____________________________________
-# Section 4: Data Cleaning (Debugging)
+# Section 3: Data Cleaning (Debugging)
 # _____________________________________
 
 # (DEMO 6: Run this to see the error, then use /fix on the broken pipe)
-
 library(dplyr)
 
 clean_data <- read.csv("data/biomarker_dummy.csv") %>%
@@ -55,7 +39,7 @@ clean_data <- read.csv("data/biomarker_dummy.csv") %>%
 
 
 # _______________________________________
-# Section 5: Biomarker Summary + Boxplot
+# Section 4: Biomarker Summary + Boxplot
 # _______________________________________
 
 # (DEMO 7: use chat to find function in workspace)
@@ -63,3 +47,8 @@ clean_data <- read.csv("data/biomarker_dummy.csv") %>%
 # (DEMO 9: auto-generate git commits)
 # (DEMO 10: custom linting agent to fix style issues)
 
+source("live-demo/utils.R")
+patient_cohort_file <- "treated_AB1234_metadata.csv"
+extractPatientCohort(patient_cohort_file)
+
+ 

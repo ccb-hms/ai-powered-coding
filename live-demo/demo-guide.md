@@ -5,7 +5,6 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 **Setup:**
 
 - Open this folder in VS Code.
-- Ensure you have run `generate_data.R` to create the `biomarker_dummy.csv` file.
 - Open `live_demo.R`. Keep `utils.R` closed to test Copilot's search features.
 
 ---
@@ -82,8 +81,8 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 
 *Custom agents help Copilot handle unique workflows.*
 
-1. In the Sidebar Chat, type: `fix linting issues in open file`. Did it do a good job?
-2. To create a custom agent, type `/create-agent called lintr that checks code style issues using lintr::lint and fixes until no more issues identified` and follow prompts.
-3. After agent is created, run the agent by typing `use lintr agent to fix style issues in live_demo.R`.
+1. In the Sidebar Chat, type: `fix linting issues in all R files`. Did it do a good job?
+2. To create a custom agent, type `/create-agent called lintr that fixes all style issues in R files identified by lintr::lint function` and follow prompts.
+3. After agent is created, run the agent by typing `use lintr agent to fix style issues in all files`.
 4. Review the suggested fixes and apply them to your code.
 5. Commit changes.
