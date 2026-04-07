@@ -4,15 +4,15 @@ Welcome to the materials for the CCB workshop: **AI-Powered Vibe Coding**.
 
 This repository contains everything you need for the session, structured to follow our 2-hour schedule:
 
-- 🪄 **Part 1 (~30 min):** Concepts & Slides
-- 📽️ **Part 2 (~45 min):** Live Coding Demonstration
+- 📽️ **Part 1 (~30 min):** Concepts & Slides
+- 🪄 **Part 2 (~45 min):** Live Coding Demonstration
 - 💻 **Part 3 (~45 min):** Hands-On Survival Analysis Exercise
 
 ## 🗂️ Repository Structure & Quick Links
 
 - [`setup/`](setup/) — Pre-workshop installation guides (VS Code, Positron, RStudio).
 - [`slides/`](slides/) — PDF of the introductory presentation.
-- [`live-demo/`](live-demo/) — Scripts used by the instructors during the live demonstration.
+- [`live-demo/`](live-demo/) — **[Live Demo Guide](live-demo/demo-guide.md)** and instructor scripts.
 - [`hands-on/`](hands-on/) — The step-by-step prompt guide, starter scripts, and **solutions** for the interactive coding exercise.
 - [`data/`](data/) — The datasets used in both the live demo and the hands-on exercises.
 
@@ -28,13 +28,18 @@ Before attending the workshop, please ensure you have:
 
 ### Choosing and Setting Up Your Editor
 
-We will teach primarily using **Visual Studio Code**, but Positron and RStudio are also supported. 
+Please complete the setup for your preferred IDE **before** the workshop. We have prepared detailed, step-by-step guides for you.
 
-Please complete the setup for your preferred IDE **before** the workshop. We have prepared detailed, step-by-step guides for you in the `setup/` folder:
+**Step 1: Get Copilot Access**  
 
-- 🔑 **[Start Here: General Setup & Copilot Access](setup/README.md)**
-- 🔵 **[VS Code Setup Guide](setup/vscode.md)** 
-- 🟣 **[Positron Setup Guide](setup/positron.md)**
+First, ensure you have an active Copilot subscription and understand the basics of the tool:
+- 🔑 **[Start Here: General Setup & Copilot Access](setup/setup-intro.md)**
+
+**Step 2: Configure Your IDE**  
+Once your access is activated, choose your preferred environment. We will teach primarily using **Visual Studio Code**, but Positron and RStudio are also supported:
+
+- 🔵 **[VS Code Setup Guide](setup/vscode.md)** *(Recommended)*
+- 🟣 **[Positron Setup Guide](setup/positron.md)** *(Supported)*
 - ⚪ **[RStudio Setup Guide](setup/rstudio.md)** *(Note: RStudio has more limited Copilot features)*
 
 ## Support

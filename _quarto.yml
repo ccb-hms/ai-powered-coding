@@ -16,7 +16,7 @@ website:
       - section: "Setup"
         contents:
           - text: "Pre-Workshop Setup"
-            file: setup/README.md
+            file: setup/setup-intro.md
           - text: "VS Code"
             file: setup/vscode.md
           - text: "Positron"
@@ -27,7 +27,7 @@ website:
       - section: "Live Demo"
         contents:
           - text: "Live Demo Guide"
-            file: live-demo/README.md
+            file: live-demo/demo-guide.md
 
 format:
   html:
