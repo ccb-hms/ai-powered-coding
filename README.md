@@ -12,7 +12,7 @@ This repository contains everything you need for the session, structured to foll
 
 - [`setup/`](setup/) — Pre-workshop installation guides (VS Code, Positron, RStudio).
 - [`slides/`](slides/) — PDF of the introductory presentation.
-- [`live-demo/`](live-demo/) — **[Live Demo Guide](live-demo/demo-guide.md)** and instructor scripts.
+- [`live-demo/`](live-demo/) — The live demo guide and instructor scripts.
 - [`hands-on/`](hands-on/) — The step-by-step prompt guide, starter scripts, and **solutions** for the interactive coding exercise.
 - [`data/`](data/) — The datasets used in both the live demo and the hands-on exercises.
 
@@ -33,6 +33,7 @@ Please complete the setup for your preferred IDE **before** the workshop. We hav
 **Step 1: Get Copilot Access**  
 
 First, ensure you have an active Copilot subscription and understand the basics of the tool:
+
 - 🔑 **[Start Here: General Setup & Copilot Access](setup/setup-intro.md)**
 
 **Step 2: Configure Your IDE**  

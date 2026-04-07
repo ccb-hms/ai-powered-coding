@@ -10,7 +10,7 @@ You will get the best experience with **GitHub Copilot Pro**.
 
 1. Apply here:
 
-   https://github.com/settings/education/benefits?locale=en-US
+   [https://github.com/settings/education/benefits?locale=en-US](https://github.com/settings/education/benefits?locale=en-US)
 
 2. Approval can be fast, but Copilot benefits may take about **72 hours** to activate (and longer if you need to resubmit verification).
 
