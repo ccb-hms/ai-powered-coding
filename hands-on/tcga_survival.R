@@ -16,7 +16,7 @@ df <- read.csv("data/tcga_clinical_trial.csv")
 # ________________________________________________
 
 # GOAL: Understand the dataset without writing code.
-# ACTION: Open your Copilot Sidebar Chat. 
+# ACTION: Open your Sidebar Chat (Ask mode). 
 # PROMPT TO TRY: 
 # "Look at #tcga_clinical_trial.csv. What are the column names, and what are 
 # the unique values inside the biomarker_status and treatment_arm columns?"
@@ -25,26 +25,28 @@ df <- read.csv("data/tcga_clinical_trial.csv")
 
 
 # _____________________________________________________
-# PHASE 2: Data Wrangling (Tool: Inline Chat / Ctrl+I)
+# PHASE 2: Data Wrangling (Tool: Sidebar Chat / Edit)
 # _____________________________________________________
 
 # GOAL: Clean the data for survival analysis.
-# ACTION: Highlight the blank space below, press Ctrl+I (or Cmd+I), and type:
+# ACTION: Place your cursor below. Open Sidebar Chat (Edit or Agent mode).
 # PROMPT TO TRY: 
-# "Filter out rows where os_days is NA. Create a new column called 'os_months' 
-# (os_days / 30.4). Create a new column 'status_binary' where 'Dead' = 1 and 
-# 'Alive' = 0. Save this as 'clean_df'."
+# "Write code to filter out rows where os_days is NA. Create a new column 
+# called 'os_months' (os_days / 30.4). Create a new column 'status_binary' 
+# where vital_status is 'Dead' = 1 and 'Alive' = 0. Save this as 'clean_df'."
 
 
 
 
 # ___________________________________________________________
-# PHASE 3: Legacy Code Interpretation (Tool: Slash Commands)
+# PHASE 3: Legacy Code Interpretation (Tool: Sidebar Chat)
 # ___________________________________________________________
 
 # GOAL: Understand and document code you didn't write.
-# ACTION 1: Highlight the function below, press Ctrl+I, and type `/explain`.
-# ACTION 2: Highlight it again, press Ctrl+I, type `/doc`, and accept the diff.
+# ACTION 1: Highlight the function below. In Sidebar Chat (Ask mode), prompt:
+#           "Explain what this #selection calculates."
+# ACTION 2: Keep it highlighted. Switch to Edit mode and prompt:
+#           "Add Roxygen2 documentation to this #selection." Accept the diff!
 
 calculate_risk_metric <- function(t, e) {
   if(length(t) != length(e)) stop("Mismatch")
@@ -57,15 +59,15 @@ calculate_risk_metric <- function(t, e) {
 
 
 # __________________________________________________________
-# PHASE 4: Kaplan-Meier Plotting (Tool: Verbose Prompting)
+# PHASE 4: Kaplan-Meier Plotting (Tool: Sidebar Chat / Edit)
 # __________________________________________________________
 
-# GOAL: Generate a publication-ready plot.
-# ACTION: Highlight the blank space below, press Ctrl+I, and give a detailed prompt.
+# GOAL: Generate a publication-ready plot and save it.
+# ACTION: Place your cursor below. Open Sidebar Chat (Edit or Agent mode).
 # PROMPT TO TRY: 
 # "Using clean_df, fit a survival curve (survfit) for os_months and status_binary 
-# grouped by treatment_arm. Then use ggsurvplot to plot it. Include a p-value, 
-# a risk table, and a title."
+# grouped by treatment_arm. Use ggsurvplot to plot it with a p-value and a 
+# risk table. Finally, write code to save the plot as 'survival_plot.pdf'."
 
 
 
@@ -76,8 +78,8 @@ calculate_risk_metric <- function(t, e) {
 
 # GOAL: Fix broken code without Googling.
 # ACTION: Run the lines below in your console. It will throw a "not found" error!
-# TO FIX IT: Ask Copilot Chat: "Why did this code fail? [Paste Error]" 
-# (Or if using VS Code, use the #terminal tag in the chat!)
+# TO FIX IT: Open Sidebar Chat (Ask mode) and prompt: 
+# "Why did this code fail? [Paste your error]" (Or use the #terminal tag!)
 
 cox_model <- coxph(Surv(os_months, status_binary) ~ treatment_arm + clinical_stage, 
                    data = cleen_dataframe)
@@ -101,11 +103,18 @@ summary(cox_model)
 # BONUS PHASES 
 # _____________
 
-# BONUS 1: The Math (Interaction Terms)
-# Use Ctrl+I to prompt: "Update the cox_model to include an interaction term 
-# between treatment_arm and biomarker_status. Then plot it using ggforest."
+# BONUS 1: Stratified Survival Analysis (The Secret Math!)
+# ACTION: Highlight the "REPLACE ME" block below. Open Sidebar Chat (Edit mode).
+# PROMPT: "Replace this #selection with a new survfit model grouped by both 
+# treatment_arm AND biomarker_status. Plot it using ggsurvplot with a p-value, 
+# and save the plot as 'stratified_plot.pdf'."
+
+# --- REPLACE ME ---
+# (Your new stratified survival model and plot code goes here!)
+# ------------------
 
 
 # BONUS 2: Python Translation & File Creation
-# Highlight your completed Phase 2 dplyr code. Open the Sidebar Chat and prompt:
-# "Create a new Python file and translate this exact data cleaning logic into pandas."
+# ACTION: Highlight your completed Phase 2 code. Open Sidebar Chat (Agent mode).
+# PROMPT: "Translate this #selection into Python using pandas. Save the new 
+# script as 'clean_data.py' inside the 'hands-on/' folder."
