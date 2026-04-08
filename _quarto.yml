@@ -33,7 +33,7 @@ website:
       - section: "Hands-On"
         contents:
           - text: "Hands-On Guide"
-            file: hands-on/demo-guide.md
+            file: hands-on/hands-on-guide.md
 
 format:
   html:
