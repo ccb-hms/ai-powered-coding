@@ -19,10 +19,25 @@
       "checksum": "4353282876374a03608a2ee8e061ab14"
     },
     "_quarto.yml": {
-      "checksum": "6502ea770888072e0bb7c3cbacca262a"
+      "checksum": "47b589e715d7660325473bc6c0481f20"
     },
     "data/biomarker_dummy.csv": {
       "checksum": "8086b4783aa5da9e3fd30347fa104f17"
+    },
+    "data/tcga_clinical_trial.csv": {
+      "checksum": "184e159df431a0ab4c68b31cc9db7966"
+    },
+    "hands-on/generate_tcga_data.R": {
+      "checksum": "53f2ac611e77789893471fa4059c6a9d"
+    },
+    "hands-on/hands-on-guide.md": {
+      "checksum": "69a6b1286a78919b21b90a2acb4f433d"
+    },
+    "hands-on/tcga_survival.R": {
+      "checksum": "be2a5b45ed7088aa6696d89d06fa37bb"
+    },
+    "hands-on/tcga_survival_solution.R": {
+      "checksum": "9f4930419eb573ee7cc9fd04918ad61a"
     },
     "index.qmd": {
       "checksum": "d1c06fcc6920498ecc2480abe5a1de95"
