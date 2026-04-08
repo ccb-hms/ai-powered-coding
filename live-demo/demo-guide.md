@@ -35,19 +35,19 @@ This folder contains the scripts used during the Hour 1 live demonstration. You 
 
 ### Demo 4: Slash Command `/explain` (Legacy Code)
 
-1. Go to Section 3. Highlight the complex Regex string.
+1. Open `utils.R` and highlight the Regex string in `extractPatientCohort` function.
 2. Press `Ctrl+I` and type `/explain`.
 3. Copilot will open the sidebar and provide a plain-English translation of the regex.
 
 ### Demo 5: Add Documentation
 
-1. Still in Section 3, highlight the entire `extractPatientCohort` function.
+1. Still in `utils.R`, highlight the entire `extractPatientCohort` function.
 2. Press `Ctrl+I`, type `add docstring`, and press Enter. 
 3. Copilot will automatically generate Roxygen2 formatted documentation. Accept the diff.
 
 ### Demo 6: Slash Command `/fix` (Debugging)
 
-1. Go to Section 4. Send the chunk to the terminal to run it.
+1. Go to Section 4 in `live_demo.R`. Send the chunk to the terminal to run it.
 2. It will throw an error: `Error in select(...) : object 'patient_id' not found` (because the code is missing a `|>` pipe).
 3. Highlight the broken code, press `Ctrl+I`, type `/fix`, and press Enter.
 4. Copilot will diagnose the missing pipe. Accept the fix.
