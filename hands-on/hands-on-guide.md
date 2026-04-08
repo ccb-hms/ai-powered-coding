@@ -26,3 +26,8 @@ Open your IDE (VS Code or Positron) and navigate to the `hands-on` folder:
 - **Phase 4: Kaplan-Meier Plotting** *(Tool: Verbose Prompting)*
 - **Phase 5: AI Debugging** *(Tool: `#terminal` or Error Chat)*
 - **Phase 6: The Magic Commit** *(Tool: Git Integration)*
+
+### 🌟 Bonus Phases:
+
+- **Bonus 1: The Math** — Test the AI's statistical knowledge by adding interaction terms to a Cox Proportional Hazards model and plotting the results.
+- **Bonus 2: Python Translation** — Ask Copilot to translate your R data-wrangling logic into `pandas` and save it as a brand new Python file.
