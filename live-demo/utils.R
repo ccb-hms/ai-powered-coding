@@ -13,6 +13,8 @@ calculate_log2_fc <- function(treatment_vals, control_vals) {
   log2(t_mean / c_mean)
 }
 
+# (DEMO 4: highlight regex, type Ctrl+I, type `/explain`)
+# (DEMO 5: highlight function, type Ctrl+I, type `add docstring`)
 extractPatientCohort <- function(file_name) {
   matches <- regmatches(file_name, 
     regexpr("(?<=_)[A-Z]{2,3}(?=[0-9]{4})", file_name, perl=TRUE))
