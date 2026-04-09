@@ -6,9 +6,9 @@ Welcome to the materials for the CCB workshop: **AI-Powered Vibe Coding**.
 
 This repository contains everything you need for the session, structured to follow our 2-hour schedule:
 
-- 📽️ **Part 1 (~30 min):** Concepts & Slides
+- 📽️ **Part 1 (~45 min):** Concepts & Slides
 - 🪄 **Part 2 (~45 min):** Live Coding Demonstration
-- 💻 **Part 3 (~45 min):** Hands-On Survival Analysis Exercise
+- 💻 **Part 3 (~30 min):** Hands-On Survival Analysis Exercise
 
 ## 🗂️ Repository Structure & Quick Links
 
