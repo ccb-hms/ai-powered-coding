@@ -1,4 +1,4 @@
-# ---------------------------------------------------------
+﻿# ---------------------------------------------------------
 # CCB WORKSHOP: Hands-On AI Survival Analysis (SOLUTIONS)
 # ---------------------------------------------------------
 
@@ -8,24 +8,31 @@ library(survival)
 library(survminer)
 
 # Load the clinical trial data
-df <- read.csv("data/tcga_clinical_trial.csv")
+df <- read.csv("../data/tcga_clinical_trial.csv")
 
 
-# ________________________________________________
-# PHASE 1: Data Exploration (Tool: Sidebar Chat)
-# ________________________________________________
+# ________________________________________________________
+# PHASE 1: Setting Lab Rules (Tool: /create-instructions)
+# ________________________________________________________
+
+# (Completed via Chat. Generates a .github/instructions/ file applying
+# tidyverse and survminer rules to the workspace.)
+
+
+# ____________________________________________
+# PHASE 2: Data Exploration (Tool: Chat Mode)
+# ____________________________________________
 
 # Chat Response Example:
-# The dataset contains 500 rows and 7 columns.
-# Column names: patient_id, age_at_diagnosis, clinical_stage, biomarker_status, 
+# Column names: patient_id, age_at_diagnosis, clinical_stage, biomarker_status,
 #               treatment_arm, os_days, vital_status.
 # Unique values in biomarker_status: "BRAF_V600E", "Wildtype".
 # Unique values in treatment_arm: "Standard_Chemo", "Targeted_Therapy".
 
 
-# _____________________________________________________
-# PHASE 2: Data Wrangling (Tool: Sidebar Chat / Edit)
-# _____________________________________________________
+# ___________________________________________
+# PHASE 3: Data Wrangling (Tool: Agent Mode)
+# ___________________________________________
 
 clean_df <- df |>
   dplyr::filter(!is.na(os_days)) |>
@@ -35,35 +42,14 @@ clean_df <- df |>
   )
 
 
-# ___________________________________________________________
-# PHASE 3: Legacy Code Interpretation (Tool: Sidebar Chat)
-# ___________________________________________________________
+# __________________________________________________
+# PHASE 4: Kaplan-Meier Plotting (Tool: Agent Mode)
+# __________________________________________________
 
-#' Calculate Cumulative Hazard (Nelson-Aalen Estimator)
-#'
-#' This function computes the cumulative hazard function using the 
-#' Nelson-Aalen estimator for right-censored survival data.
-#'
-#' @param t A numeric vector of survival times.
-#' @param e A numeric vector of event indicators (1 for event, 0 for censored).
-#'
-#' @return A numeric vector of cumulative hazards corresponding to the sorted times.
-#' @export
-calculate_risk_metric <- function(t, e) {
-  if(length(t) != length(e)) stop("Mismatch")
-  o <- order(t)
-  t <- t[o]; e <- e[o]
-  r <- length(t):1
-  h <- e/r
-  return(cumsum(h))
-}
-
-
-# __________________________________________________________
-# PHASE 4: Kaplan-Meier Plotting (Tool: Sidebar Chat / Edit)
-# __________________________________________________________
-
-km_fit <- survfit(Surv(os_months, status_binary) ~ treatment_arm, data = clean_df)
+km_fit <- survfit(
+  Surv(os_months, status_binary) ~ treatment_arm,
+  data = clean_df
+)
 
 km_plot <- ggsurvplot(
   km_fit,
@@ -76,65 +62,81 @@ km_plot <- ggsurvplot(
   theme = theme_minimal()
 )
 
-# Save to PDF so it is easily viewable without a configured graphics device!
-pdf("survival_plot.pdf", width = 8, height = 6)
+# Create figures directory if it doesn't exist, then save plot
+dir.create("figures", showWarnings = FALSE)
+pdf("figures/survival_plot.pdf", width = 8, height = 6)
 print(km_plot)
 dev.off()
 
 
-# _______________________________________________________
-# PHASE 5: AI Debugging (Tool: #terminal or Error Chat)
-# _______________________________________________________
+# ______________________________________________________
+# PHASE 5: AI Debugging (Tool: Terminal Auto-Detection)
+# ______________________________________________________
 
-# THE FIX: Copilot will identify that `cleen_dataframe` is misspelled and 
-# correct it to `clean_df`.
+# THE FIX: Copilot will automatically read the terminal error, identify that
+# `cleen_dataframe` is misspelled, and correct it to `clean_df`.
 
-cox_model <- coxph(Surv(os_months, status_binary) ~ treatment_arm + clinical_stage, 
-                   data = clean_df)
+cox_model <- coxph(
+  Surv(os_months, status_binary) ~ treatment_arm + clinical_stage,
+  data = clean_df
+)
 
 summary(cox_model)
 
 
-# __________________________________________________
-# PHASE 6: The Magic Commit (Tool: Source Control)
-# __________________________________________________
+# _________________________________________________________
+# PHASE 6: Stratified Survival Analysis (The Secret Math!)
+# _________________________________________________________
 
-# (Completed in the VS Code Source Control GUI)
-
-
-# _____________
-# BONUS PHASES 
-# _____________
-
-# BONUS 1: Stratified Survival Analysis (The Secret Math!)
-
-km_stratified <- survfit(Surv(os_months, status_binary) ~ treatment_arm + biomarker_status, 
-                         data = clean_df)
+km_stratified <- survfit(
+  Surv(os_months, status_binary) ~ treatment_arm + biomarker_status,
+  data = clean_df
+)
 
 stratified_plot <- ggsurvplot(
   km_stratified,
   data = clean_df,
   pval = TRUE,
   risk.table = TRUE,
-  risk.table.height = 0.4, 
-  legend = "right",        
+  risk.table.height = 0.4,
+  legend = "right",
   title = "Survival by Treatment and Biomarker",
   xlab = "Time (Months)",
   ylab = "Survival Probability",
   theme = theme_minimal()
 )
 
-pdf("stratified_plot.pdf", width = 10, height = 8)
+dir.create("figures", showWarnings = FALSE)
+pdf("figures/stratified_plot.pdf", width = 10, height = 8)
 print(stratified_plot)
 dev.off()
 
 
-# BONUS 2: Python Translation & File Creation
-# Resulting Python code generated by the Agent in hands-on/clean_data.py:
+# ____________________________________________________
+# PHASE 7: Build a Custom Agent (Tool: /create-agent)
+# ____________________________________________________
+
+# (Completed via the interactive /create-agent wizard in the Chat panel)
+
+
+# ____________________________________________
+# PHASE 8: Python Translation & File Creation
+# ____________________________________________
+
+# Resulting Python code generated by @python-translator in
+# hands-on/clean_data.py:
 #
 # import pandas as pd
 # import numpy as np
-# 
+#
 # clean_df = df.dropna(subset=['os_days']).copy()
-# clean_df['os_months'] = clean_df['os_days'] / 30.4
-# clean_df['status_binary'] = np.where(clean_df['vital_status'] == 'Dead', 1, 0)
+# clean_df['os_months'] = clean_df['os_days'] / 30.4  # nolint
+# clean_df['status_binary'] = np.where(  # nolint
+#   clean_df['vital_status'] == 'Dead', 1, 0)
+
+
+# _________________________________________________
+# PHASE 9: The Magic Commit (Tool: Source Control)
+# _________________________________________________
+
+# (Completed in the VS Code Source Control GUI)
