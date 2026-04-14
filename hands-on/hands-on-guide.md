@@ -7,6 +7,7 @@ Welcome to Part 3 of the workshop. In this 30-minute session, we will practice *
 We are analyzing a simulated cohort of 500 patients testing a novel **Targeted Therapy** against **Standard Chemotherapy**. The primary endpoint of this analysis is to determine if the targeted therapy significantly improves Overall Survival (OS).
 
 The dataset contains the following 7 variables:
+
 - **`patient_id`**: Unique patient barcode.
 - **`age_at_diagnosis`**: Patient age in years.
 - **`clinical_stage`**: Disease severity at baseline (*Stage II, III, or IV*).
@@ -27,6 +28,7 @@ Open VS Code and navigate to the `hands-on` folder:
 ---
 
 ### The 9 Workshop Phases:
+
 - **Phase 1: Setting Lab Rules** *(Tool: `/create-instructions`)*
 - **Phase 2: Data Exploration** *(Tool: Smart Search + Chat Mode)*
 - **Phase 3: Data Wrangling** *(Tool: Agent Mode)*
